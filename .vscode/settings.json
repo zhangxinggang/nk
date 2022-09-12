@@ -1,0 +1,101 @@
+{
+  "debug.allowBreakpointsEverywhere": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.tabSize": 2,
+  "editor.lineHeight": 20,
+  "editor.formatOnType": true,
+  "editor.autoIndent": "none",
+  "editor.wrappingIndent": "indent",
+  "editor.wordWrap": "on",
+  "editor.minimap.enabled": false,
+  "editor.wordWrapColumn": 160,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.fixAll.eslint": true
+  },
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.syntaxProfiles": {
+    "vue-html": "html",
+    "vue": "html"
+  },
+  "emmet.includeLanguages": {
+    "wxml": "html",
+    "vue-html": "html",
+    "javascript": "javascriptreact"
+  },
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "files.maxMemoryForLargeFilesMB": 8192,
+  "files.associations": {
+    "*.vue": "vue",
+    "*.cjson": "jsonc",
+    "*.wxss": "css",
+    "*.wxs": "javascript",
+    "*.yml": "yaml"
+  },
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "html.format.indentInnerHtml": true,
+  "html.format.indentHandlebars": false,
+  "html.format.wrapLineLength": 100000,
+  "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
+  "javascript.format.insertSpaceAfterKeywordsInControlFlowStatements": false,
+  "javascript.format.placeOpenBraceOnNewLineForFunctions": false,
+  "javascript.format.placeOpenBraceOnNewLineForControlBlocks": false,
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "search.followSymlinks": false,
+  "terminal.integrated.fontSize": 16,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "vetur.validation.template": false,
+  "vetur.format.styleInitialIndent": true,
+  "vetur.format.scriptInitialIndent": true,
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "brace_style": "collapse", // [collapse|expand|
+      "unformatted": [
+        "area",
+        "base",
+        "br",
+        "col",
+        "embed",
+        "hr",
+        "keygen",
+        "link",
+        "menuitem",
+        "meta",
+        "param",
+        "source",
+        "track",
+        "wbr"
+      ]
+    }
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.renderSideBySide": true,
+  "eslint.run": "onType",
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "eslint.validate": ["typescript", "javascript", "javascriptreact"],
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
+}
