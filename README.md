@@ -4,12 +4,12 @@
 
 ## 功能清单
 
-- [ ] http 服务器
-- [ ] 应用代理
-- [ ] 静态资源服务器
-- [ ] 路由权限控制，静态文件权限控制
-- [ ] 邮件服务
-- [ ] 自动执行任务
+- [√] http 服务器
+- [√] 应用代理
+- [√] 静态资源服务器
+- [√] 路由权限控制，静态文件权限控制
+- [√] 邮件服务
+- [√] 自动执行任务
 - [x] rtmp 服务器
 - [x] rtsp 服务器
 - [x] tcp 服务器
@@ -23,8 +23,8 @@ demo 运用地址：https://github.com/zhangxinggang/LocalMusicPlayer.git
 2. 新起项目，新建一个文件内容如下(例如为 index.js)，路径根据实际情况而定
 
 ```js
-const services = require("@zhangxg/nk");
-const config = require("./config");
+const services = require('@zhangxg/nk');
+const config = require('./config');
 services(config);
 ```
 

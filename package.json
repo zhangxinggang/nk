@@ -1,50 +1,57 @@
 {
-  "name": "@zhangxg/nk",
-  "version": "1.0.0",
-  "description": "node serve",
-  "author": "zxg",
-  "main": "index.js",
-  "scripts": {
-    "dev": "npx nodemon --exec node ./scripts/start.js",
-    "serve": "node ./scripts/start.js"
-  },
-  "keywords": [
-    "node",
-    "node.js",
-    "koa"
-  ],
-  "nodemonConfig": {
-    "ignore": [
-      "dist/*",
-      "doc/*",
-      "node_modules/*",
-      "logs/*"
-    ],
-    "delay": "2500"
-  },
-  "dependencies": {
-    "@log4js-node/smtp": "^1.1.0",
-    "dotenv": "^8.2.0",
-    "glob": "^7.1.6",
-    "http-proxy-middleware": "^1.0.6",
-    "jsonwebtoken": "^8.5.1",
-    "koa": "^2.13.0",
-    "koa-bodyparser": "^4.2.1",
-    "koa-compress": "^3.0.0",
-    "koa-connect": "^2.1.0",
-    "koa-favicon": "^2.1.0",
-    "koa-helmet": "^4.0.0",
-    "koa-router": "^7.4.0",
-    "koa-send": "^5.0.1",
-    "koa2-cors": "^2.0.6",
-    "lodash": "^4.17.21",
-    "log4js": "^6.3.0",
-    "merge": "^1.2.1",
-    "mysql": "^2.18.1",
-    "typeorm": "^0.2.28",
-    "upath": "^2.0.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.6"
-  }
+	"name": "@zhangxg/nk",
+	"version": "1.0.1",
+	"description": "node serve",
+	"author": "zxg",
+	"main": "index.js",
+	"scripts": {
+		"dev": "npx nodemon --exec node ./scripts/start.js",
+		"serve": "node ./scripts/start.js",
+		"prettier": "prettier --write ."
+	},
+	"keywords": [
+		"node",
+		"node.js",
+		"koa"
+	],
+	"nodemonConfig": {
+		"ignore": [
+			"dist/*",
+			"doc/*",
+			"node_modules/*",
+			"logs/*"
+		],
+		"delay": "2500"
+	},
+	"dependencies": {
+		"@log4js-node/smtp": "^1.1.0",
+		"dotenv": "^8.2.0",
+		"glob": "^7.1.6",
+		"http-proxy-middleware": "^1.0.6",
+		"http2": "^3.3.6",
+		"jsonwebtoken": "^8.5.1",
+		"koa": "^2.13.0",
+		"koa-body": "^7.0.0",
+		"koa-compress": "^3.0.0",
+		"koa-connect": "^2.1.0",
+		"koa-favicon": "^2.1.0",
+		"koa-helmet": "^4.0.0",
+		"koa-router": "^7.4.0",
+		"koa-send": "^5.0.1",
+		"koa2-cors": "^2.0.6",
+		"lodash": "^4.17.21",
+		"log4js": "^6.3.0",
+		"merge": "^1.2.1",
+		"mysql": "^2.18.1",
+		"node-rsa": "^1.1.1",
+		"upath": "^2.0.1"
+	},
+	"devDependencies": {
+		"eslint": "^9.22.0",
+		"eslint-config-prettier": "^10.1.1",
+		"eslint-plugin-import": "^2.31.0",
+		"eslint-plugin-prettier": "^5.2.3",
+		"nodemon": "^2.0.6",
+		"prettier": "^3.5.3"
+	}
 }
