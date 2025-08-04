@@ -1,0 +1,18 @@
+{
+	"env": {
+		"es2021": true,
+		"node": true
+	},
+	"extends": ["standard-with-typescript", "plugin:prettier/recommended", "eslint:recommended"],
+	"plugins": ["import", "prettier"],
+	"ignorePatterns": ["src/**/*.test.ts"],
+	"rules": {
+		"prettier/prettier": "error",
+		"camelcase": "error",
+		"spaced-comment": "error",
+		"quotes": ["error", "single"],
+		"no-duplicate-imports": "error",
+		"no-unused-vars": "off",
+		"no-magic-numbers": "off"
+	}
+}

@@ -31,25 +31,25 @@
 		}
 	}
  */
-const nodemailer = require("nodemailer");
+const nodemailer = require('nodemailer');
 
 class Communication {
-  sendMail(options, cb) {
-    NKGlobal.config.communication = NKGlobal.config.communication || {};
-    let mailer = NKGlobal.config.communication.mailer;
-    let mailConf = mailer[mailer.server];
-    let transport = nodemailer.createTransport(mailConf);
-    options.from = options.from || mailConf["auth"]["user"];
-    options.from = options.from + "<" + mailConf["auth"]["user"] + ">";
-    transport.sendMail(options, function (err, info) {
-      if (typeof cb == "function") {
-        if (err) {
-          cb(err);
-        } else {
-          cb(null, info);
-        }
-      }
-    });
-  }
+	sendMail(options, cb) {
+		NKGlobal.config.communication = NKGlobal.config.communication || {};
+		let mailer = NKGlobal.config.communication.mailer;
+		let mailConf = mailer[mailer.server];
+		let transport = nodemailer.createTransport(mailConf);
+		options.from = options.from || mailConf['auth']['user'];
+		options.from = options.from + '<' + mailConf['auth']['user'] + '>';
+		transport.sendMail(options, function (err, info) {
+			if (typeof cb == 'function') {
+				if (err) {
+					cb(err);
+				} else {
+					cb(null, info);
+				}
+			}
+		});
+	}
 }
 module.exports = Communication;
